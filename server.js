@@ -4,14 +4,14 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 const app = require('./app');
 //ERRROR OUTSIDE EXPRESS
-process.on('unhandledRejection', err => {
+process.on('unhandledRejection', (err) => {
   console.log(err.name, err.message);
   console.log('unhandledRejection, shutting down...');
   server.close(() => {
     process.exit(1);
   });
 });
-process.on('uncaughtException', err => {
+process.on('uncaughtException', (err) => {
   console.log(err.name, err.message);
   console.log('UNCAUGHT EXECPTION, shutting down...');
   server.close(() => {
@@ -30,9 +30,9 @@ mongoose
     //deprecated after version 5
     useCreateIndex: true,
     useFindAndModify: false,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
-  .then(con => {
+  .then((con) => {
     // console.log(con.connections);
     console.log('DB connection established');
   });

@@ -9,12 +9,12 @@ class APIFeatures {
     const queryObj = { ...this.queryString };
     const excludeQuery = ['limit', 'page', 'sort', 'fields'];
     excludeQuery.forEach((el) => delete queryObj[el]);
-    console.log(this.queryString, 'query excluded', queryObj);
+    // console.log(this.queryString, 'query excluded', queryObj);
 
     //FILTERING ADVANCED
     let queryStr = JSON.stringify(queryObj);
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
-    console.log(queryStr, 'query');
+    // console.log(queryStr, 'query');
     this.query.find(JSON.parse(queryStr));
 
     return this;
