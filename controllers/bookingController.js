@@ -54,7 +54,7 @@ exports.createBooking = catchAsync(async (req, res, next) => {
 });
 
 //FACTORY
-exports.createBooking = factory.createOne(Booking);
+exports.createNewBooking = factory.createOne(Booking);
 exports.getBooking = factory.getOne(Booking);
 exports.getAllBookings = factory.getAll(Booking);
 exports.updateBooking = factory.updateOne(Booking);

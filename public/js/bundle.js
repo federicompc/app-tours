@@ -8823,7 +8823,7 @@ function () {
             //   console.log('data', data, 'type', type);
             msgAlert = "".concat(type, " updated in successfully");
             _context.prev = 1;
-            url = type === 'password' ? 'http://127.0.0.1:3000/api/v1/users/updatePassword' : 'http://127.0.0.1:3000/api/v1/users/updateMe'; // console.log(url);
+            url = type === 'password' ? '/api/v1/users/updatePassword' : '/api/v1/users/updateMe'; // console.log(url);
 
             _context.next = 5;
             return (0, _axios.default)({
@@ -9309,7 +9309,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56072" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51046" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
