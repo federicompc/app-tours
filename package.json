@@ -57,7 +57,7 @@
     "parcel-bundler": "^1.12.3",
     "prettier": "^2.3.2"
   },
-  "engines":{
+  "engines": {
     "node": "12.7.0",
     "npm": "6.10.0"
   }

@@ -28,7 +28,7 @@ app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
-      
+        defaultSrc: ["'self'", '/*'],
         baseUri: ["'self'"],
         fontSrc: ["'self'", 'https:', 'data:'],
         scriptSrc: [
