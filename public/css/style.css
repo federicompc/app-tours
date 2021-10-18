@@ -346,7 +346,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     /* flex-direction: column; */
-    padding: 3rem 5rem;
+    padding: 1rem 1rem;
     height: auto;
     position: fixed;
     bottom: 0;
@@ -938,7 +938,7 @@ body {
   .nav__el:visited {
     color: #f7f7f7;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    /* font-size: 0.8rem; */
     text-decoration: none;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -963,6 +963,15 @@ body {
   .nav__el:not(:last-child) {
     margin-right: 3rem;
   }
+}
+.icon{
+  font-size:2.5rem !important;
+  padding: 0 0 0 20px;
+  vertical-align: top;
+}
+.sg{
+  font-size:1.3rem !important;
+  padding: 0 0 0 20px;
 }
 @media only screen and (max-width: 37.5em) {
   .nav--tours {
@@ -1008,12 +1017,12 @@ body {
 .nav__el:not(:last-child) {
   margin-right: 3rem;
 }
-@media only screen and (max-width: 37.5em) {
+/* @media only screen and (max-width: 37.5em) {
   .nav__el:not(:last-child) {
     margin-right: 0;
     margin-bottom: 1.2rem;
   }
-}
+} */
 .nav__el:focus {
   outline: none;
 }
