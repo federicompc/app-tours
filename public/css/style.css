@@ -352,10 +352,6 @@ body {
     bottom: 0;
     width: 100%;
   }
-  .header__logo img {
-    height: 3.5rem;
-    /* display:none */
-  }
 }
 .header__logo img {
   height: 3.5rem;
@@ -364,8 +360,11 @@ body {
   .header__logo {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
-    order: -1;
-    margin-bottom: 1.5rem;
+    position: absolute;
+    
+    margin-bottom: 5.8rem;
+    background-color: #444;
+    border-radius:50px;
   }
 }
 
