@@ -366,10 +366,9 @@ body {
 @media only screen and (max-width: 62.5em) {
   .header__logo {
     -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
-    position: absolute;
-    
-    margin-bottom: 6.2rem;
+    /* -ms-flex-order: -1; */
+    position: fixed;    
+    bottom: 35px;
     background-color: #444;
     border-radius:50px;
   }
