@@ -354,7 +354,7 @@ body {
   }
   .header__logo img {
     height: 3.5rem;
-    display:none
+    /* display:none */
   }
 }
 .header__logo img {

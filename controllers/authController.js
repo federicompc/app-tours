@@ -43,7 +43,7 @@ exports.signup = catchAsync(async (req, res) => {
   });
   await new Email(newUser, url).sendWelcome();
   console.log(url);
-  const token = signToken(newUser._id);
+  const token = createSendToken(newUser._id, 200, res);
 
   res.status(200).json({
     user: {
