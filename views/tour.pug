@@ -60,10 +60,10 @@ block content
 
 
         .description-box
-            h2.heading-secondary.ma-bt-lg=`About the ${tour.name} tour`
-            -const paragraph = tour.description.split('\n')
-                each p of paragraph
-                    p.description__text=p 
+             h2.heading-secondary.ma-bt-lg=`About the ${tour.name} tour`
+             -const paragraph = tour.description.split('\n')
+                 each p of paragraph
+                     p.description__text=p 
 
     section.section-pictures
         each image, i in tour.images 
@@ -82,10 +82,11 @@ block content
 
     section.section-cta
         .cta
-            .cta__img.cta__img--logo
-                img(src='/img/logo-white.png', alt='Natours logo')
-            img.cta__img.cta__img--1(src=`/img/tours/${tour.images[0]}`, alt='')
-            img.cta__img.cta__img--2(src=`/img/tours/${tour.images[1]}`, alt='')
+          
+            //- .cta__img.cta__img--logo
+            //-     img(src='/img/logo-white.png', alt='Natours logo')
+            //- img.cta__img.cta__img--1(src=`/img/tours/${tour.images[0]}`, alt='')
+            //- img.cta__img.cta__img--2(src=`/img/tours/${tour.images[1]}`, alt='')
             .cta__content
                 h2.heading-secondary What are you waiting for?
                 p.cta__text=`${tour.duration} days. 1 adventure. Infinite memories. Make it yours today!`
@@ -93,4 +94,4 @@ block content
                 if user 
                  button.btn.btn--green.span-all-rows#book-tour(data-tour-id=`${tour.id}`) Book tour now!
                 else 
-                 a.btn.btn--green.span-all-rows(href='/login') Login to book tour!
+                a.btn.btn--green.span-all-rows(href='/login') Login to book tour!

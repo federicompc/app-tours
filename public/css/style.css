@@ -346,11 +346,18 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     /* flex-direction: column; */
-    padding: 1rem 1rem;
+    padding: 1rem 0rem 1rem 2rem;
     height: auto;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 9999;
+  }
+  .heading-primary {
+    font-size: 2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
   }
 }
 .header__logo img {
@@ -362,15 +369,16 @@ body {
     -ms-flex-order: -1;
     position: absolute;
     
-    margin-bottom: 5.8rem;
+    margin-bottom: 6.2rem;
     background-color: #444;
     border-radius:50px;
   }
+  
 }
 
 .section-header {
   position: relative;
-  height: 38vw;
+  /* height: 38vw; */
   clip-path: polygon(
     0 0,
     100% 0,
@@ -406,10 +414,10 @@ body {
     linear,
     left top,
     right bottom,
-    from(#7dd56f),
-    to(#28b487)
+    from(#6fb8d5),
+    to(#2865b4)
   );
-  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  background-image: linear-gradient(to right bottom, #6fb8d5, #2865b4);
   opacity: 0.85;
 }
 
@@ -459,13 +467,18 @@ body {
   -webkit-filter: drop-shadow(0 0.75rem 0.5rem rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 0.75rem 0.5rem rgba(0, 0, 0, 0.25));
 }
-
+@media only screen and (max-width: 62.5em) {
+.section-description {
+  flex-direction: column;
+}
+}
 .section-description {
   background-color: #fcfcfc;
   margin-top: calc(0px - var(--section-rotate));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
 }
 .section-description > * {
   padding: 0 8vw;
@@ -474,6 +487,7 @@ body {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
+  
 }
 
 .description-box .description {
@@ -723,7 +737,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   background-color: #fff;
-  padding: 9rem 5rem 9rem 21rem;
+  padding: 9rem 5rem 9rem 7rem;
   border-radius: 2rem;
   -webkit-box-shadow: 0 3rem 8rem 0.5rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 3rem 8rem 0.5rem rgba(0, 0, 0, 0.15);
@@ -775,7 +789,8 @@ body {
   z-index: 8;
 }
 .cta__content {
-  display: grid;
+ 
+
   grid-template-rows: auto auto;
   grid-template-columns: 1fr auto;
   grid-gap: 0.7rem;
@@ -787,6 +802,7 @@ body {
 .cta__text {
   font-size: 1.9rem;
   font-weight: 400;
+  padding: 20px 0;
 }
 
 .user-view {
@@ -965,8 +981,8 @@ body {
 }
 .icon{
   font-size:2.5rem !important;
-  padding: 0 0 0 20px;
-  vertical-align: top;
+  padding: 0 0 0 8;
+  
 }
 .sg{
   font-size:1.3rem !important;
