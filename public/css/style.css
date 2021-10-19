@@ -144,10 +144,10 @@ body {
     linear,
     left top,
     right top,
-    from(#7dd56f),
-    to(#28b487)
+    from(#306eb6),
+    to(#44a5bd)
   );
-  background-image: linear-gradient(to right, #d56f6f, #b46c28);
+  background-image: linear-gradient(to right, #306eb6, #44a5bd);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.1rem;
@@ -538,7 +538,7 @@ body {
 .overview-box__icon {
   height: 2.25rem;
   width: 2.25rem;
-  fill: #55c57a;
+  fill: #2325b8;
 }
 .overview-box__label {
   font-weight: 700;
@@ -636,10 +636,10 @@ body {
     linear,
     left top,
     right bottom,
-    from(#7dd56f),
-    to(#28b487)
+    from(#6f71d5),
+    to(#99f0f0)
   );
-  background: linear-gradient(to right bottom, #7dd56f, #28b487);
+  background: linear-gradient(to right bottom, #6f71d5, #99f0f0);
   clip-path: polygon(
     0 var(--section-rotate),
     100% 0,
@@ -724,7 +724,7 @@ body {
   margin-right: 1px;
 }
 .reviews__star--active {
-  fill: #55c57a;
+  fill: #c55555;
 }
 .reviews__star--inactive {
   fill: #bbb;
@@ -824,6 +824,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
 }
 .user-view__menu {
   -webkit-box-flex: 32rem;
@@ -833,10 +834,10 @@ body {
     linear,
     left top,
     right bottom,
-    from(#7dd56f),
-    to(#28b487)
+    from(#7ca3ec),
+    to(#3b88e0)
   );
-  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  background-image: linear-gradient(to right bottom, #7ca3ec, #3b88e0);
   padding: 4rem 0;
 }
 .user-view__content {
