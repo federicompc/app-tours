@@ -6,8 +6,8 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
-const compression= require('compression')
-
+const compression = require('compression');
+const cors = require('cors');
 const morgan = require('morgan');
 const globalErrorHandler = require('./controllers/errorController');
 const AppError = require('./utils/appError');
@@ -45,7 +45,11 @@ app.use(
   })
 );
 
-app.use(compression())
+app.use(compression());
+//allow origins to all api
+app.use(cors());
+//preflight pahse
+app.options('*', cors());
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
